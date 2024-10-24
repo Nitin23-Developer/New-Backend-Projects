@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+</head>
+<body>
+	<!--Their is given a one callback function, in callback function we pass one argument which is arg to another function-->
+    <p id="p1">This is javascript</p>
+<button onclick="fun('orange');">red</button>
+<button onclick="fun('black');">green</button>
+<button onclick="fun('purple');">blue</button>
+
+<script type="text/javascript">
+	//to select particular element
+	a=document.getElementById('p1');
+	function fun(arg){
+	//css
+	a.style.backgroundColor=arg;
+	a.style.color="white";
+	a.style.border="2px solid black";
+}
+
+</script>
+
+</body>
+</html>

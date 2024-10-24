@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Increment & Decrement</title>
+</head>
+<body>
+    <!--In that we take a two onclick events up and down and we perform a task for up & down with the post increment and decrement on clickk-->
+        <button onclick="up();">up</button>
+        <button onclick="down();">down</button>
+        <p id="p1" > 0 </p>
+        
+        
+        <script type="text/javascript">
+            
+            a=document.getElementById('p1');
+            i=0;
+            function up(){
+            //css
+            a.innerHTML=i;
+            i++;
+        
+        }
+        function down(){
+            //css
+            a.innerHTML=i;
+            i--;
+            
+        }
+        </script>
+        
+</body>
+</html>

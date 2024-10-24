@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Style using Array with html dom</title>
+</head>
+<body>
+    <p class="p1">this is para one</p>
+<p class="p1">this is para two</p>
+<p class="p1">this is para three</p>
+<p class="p1">this is para four</p>
+<script type="text/javascript">
+	a=document.getElementsByClassName('p1');
+	console.log(a);
+	a[0].style.color="red";
+	a[1].style.color="green";
+	a[2].style.backgroundColor="yellow";
+	a[3].style.color="pink";
+
+
+</script>
+
+</body>
+</html>

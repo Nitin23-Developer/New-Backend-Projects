@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Function</title>
+</head>
+<body>
+
+    <!--First of all their given an onclick event in that their is given a three callback function-->
+    <!--In javascrit we call the three call back functions and we perform html dom methods on that-->
+    <p id="p1">This is javascript</p>
+<button onclick="red();">red</button>
+<button onclick="green();">green</button>
+<button onclick="blue();">blue</button>
+
+<script type="text/javascript">
+	function red(){
+	//to select particular element
+	a=document.getElementById('p1');
+	console.log(a);
+	//css
+	a.style.backgroundColor='red';
+	a.style.color="white";
+	a.style.border="2px solid black";
+}
+
+function green(){
+	//to select particular element
+	a=document.getElementById('p1');
+	console.log(a);
+	//css
+	a.style.backgroundColor='green';
+	a.style.color="white";
+	a.style.border="2px solid black";
+}
+
+function blue(){
+	//to select particular element
+	a=document.getElementById('p1');
+	console.log(a);
+	//css
+	a.style.backgroundColor='blue';
+	a.style.color="white";
+	a.style.border="2px solid black";
+}
+
+</script>
+
+</body>
+</html>
