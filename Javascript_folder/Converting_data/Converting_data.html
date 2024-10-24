@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converting_data</title>
+</head>
+<body>
+    <p id="p1">This is javascript</p>
+<button onclick="fun1('black');">color add</button>
+<button onclick="fun1('white');">color remove</button>
+<button onclick="fun2('red');">background color add</button>
+<button onclick="fun2('white');">background color remove</button>
+<button onclick="Increase('larger');">Incrise font size</button>
+<button onclick="Decrease('smaller');">decrise fornt size</button>
+<button onclick="bold('bold');">Bold</button>
+<button onclick="normal('normal');">Un Bold</button>
+<button onclick="italic('italic');">Italic</button>
+<button onclick="french('normal');">Un Italic</button>
+
+<script type="text/javascript">
+	//to select particular element
+	a=document.getElementById('p1');
+	i=0;
+function fun1(arg){
+	//css
+	a.style.color=arg;
+	a.style.border="2px solid black";
+}
+function fun2(arg){
+	//css
+	a.style.backgroundColor=arg;
+	a.style.border="2px solid black";
+}
+function Increase(arg){
+	//css
+	a.style.fontSize=arg;
+    a.style.fontSize=i+"px";
+    i++;
+}
+function Decrease(arg){
+    a.style.fontSize=arg;
+    a.style.fontSize=i+"px";
+    i--;
+
+}
+function bold(arg){
+	//css
+	a.style.fontWeight=arg;
+    a.style.fontWeight="bold";
+
+}
+function normal(arg){
+    a.style.fontWeight=arg;
+    a.style.fontWeight="normal;"
+}
+function italic(arg){
+	//css
+	a.style.fontStyle=arg;
+    a.style.fontStyle="italic";
+
+}
+function french(arg){
+    a.style.fontStyle=arg;
+    a.style.fontStyle="normal";
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

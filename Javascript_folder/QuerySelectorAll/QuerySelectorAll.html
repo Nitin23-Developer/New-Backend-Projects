@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerySelectorAll</title>
+</head>
+<body>
+    <h2 class="p1" id="head1">heading
+	</h2>
+<p  >this is para one</p>
+<h3 class="p1" id="d1">this is para two</h3>
+<div>
+	<h4 class="para"> para inside div</h4>
+</div>
+<script type="text/javascript">
+
+	a=document.querySelectorAll('h2');
+
+	b=document.querySelectorAll('p');
+
+	c=document.querySelectorAll('h3');
+
+	d=document.querySelectorAll('h4');
+
+	console.log(a);
+	console.log(b);
+	console.log(c);
+	console.log(d);
+
+	a[0].style.color="red";
+	b[0].style.color="green";
+	c[0].style.backgroundColor="yellow";
+	d[0].style.color="pink";
+
+
+</script>
+
+</body>
+</html>
